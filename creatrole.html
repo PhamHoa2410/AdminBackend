@@ -1,12 +1,12 @@
-<!doctype html>
-<html lang="en">
-
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="utf-8">
+	<title></title>
+	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Language" content="en">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>BlogIT User Management</title>
+    <title>Regular Tables - Tables are the backbone of almost all web applications.</title>
     <meta name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
     <meta name="description" content="Tables are the backbone of almost all web applications.">
@@ -24,13 +24,12 @@
     <link href="./main.css" rel="stylesheet">
     <link href="./main1.css" rel="stylesheet">
 </head>
-
 <body>
-    <div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
+<div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
         <div class="app-header header-shadow">
             <div class="app-header__logo">
-                <a href=""> <img src="img/logo.png" alt="logo" style="width: 60px; height: 50px; margin: 0px 0px; "> </a>
-                <div class="header__pane ml-auto">
+           <a href=""> <img src="img/logo.png" alt="logo" style="width: 60px; height: 50px; margin: 0px 0px; "> </a>               
+            <div class="header__pane ml-auto">
                     <div>
                         <button type="button" class="hamburger close-sidebar-btn hamburger--elastic"
                             data-class="closed-sidebar">
@@ -71,7 +70,7 @@
                     </div>
                     <ul class="header-menu nav">
                         <li class="nav-item">
-                            <a href="javascript:void(0);" class="nav-link">
+                            <a href="javascript:void(0);" class="nav-link" style="color: #fff;">
                                 <i class="nav-link-icon fa fa-database"> </i>
                                 Statistics
                             </a>
@@ -95,7 +94,7 @@
                         <div class="widget-content p-0">
                             <div class="widget-content-wrapper">
                                 <div class="widget-content-left">
-                                    <div class="btn-group">
+                                    <div class="btn-group" ">
                                         <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
                                             class="p-0 btn">
                                             <img width="42" class="rounded-circle" src="assets/images/avatars/1.jpg"
@@ -539,7 +538,7 @@
                 </div>
                 <div class="scrollbar-sidebar">
                     <div class="app-sidebar__inner">
-                       <ul class="vertical-nav-menu">
+                        <ul class="vertical-nav-menu">
                             <li class="app-sidebar__heading">Dashboards</li>
                             <li>
                                 <a href="index.html">
@@ -592,182 +591,313 @@
                                     <i class="fas fa-user">
                                     </i>
                                 </div>
-                                <div>User Management
-                                </div>
-                            </div>
-                            <div class="page-title-actions">
-                                <div class="d-inline-block dropdown">
-                                    <button type="button" data-toggle="dropdown" aria-haspopup="true"
-                                        aria-expanded="false" onclick="window.location.href='./newUser.html'" class="btn-shadow btn btn-info">
-                                        Add New User
-                                    </button>
+                                <div> Creat Role 
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="main-card mb-3 card">
-                        <div class="card-body">
-                            <h5 class="card-title">User</h5>
-                            <table class="mb-0 table">
-                                <thead>
-                                    <tr>
-                                        <th>#</th>
-                                        <th>Name</th>
-                                        <th>Email</th>
-                                        <th>Role</th>
-                                        <th>Actions</th>                                      
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <th scope="row">1</th>
-                                        <td>Mushroom Tora</td>
-                                        <td>torabidien@gmail.com</td>
-                                        <td>Editor</td>
-                                        <td><a href="./editUser.html" style="color:black"><i class="fas fa-edit"></i></a>
-                                            <button style="	background: none;
-                                            color: inherit;
-                                            border: none;
-                                            padding: 0;
-                                            font: inherit;
-                                            cursor: pointer;
-                                            outline: inherit;" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-trash-alt" style="margin-left: 10px; margin-right: 10px;"></i></button></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">2</th>
-                                        <td>Le Trung Duc</td>
-                                        <td>ducdeptraivodich@gmail.com</td>
-                                        <td>Administrator</td>
-                                        <td><a href="./editUser.html" style="color:black"><i class="fas fa-edit"></i></a>
-                                            <button style="	background: none;
-                                            color: inherit;
-                                            border: none;
-                                            padding: 0;
-                                            font: inherit;
-                                            cursor: pointer;
-                                            outline: inherit;" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-trash-alt" style="margin-left: 10px; margin-right: 10px;"></i></button></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">3</th>
-                                        <td>Shiro</td>
-                                        <td>shiro2410@gmail.com</td>
-                                        <td>Editor</td>
-                                        <td><a href="./editUser.html" style="color:black"><i class="fas fa-edit"></i></a>
-                                            <button style="	background: none;
-                                            color: inherit;
-                                            border: none;
-                                            padding: 0;
-                                            font: inherit;
-                                            cursor: pointer;
-                                            outline: inherit;" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-trash-alt" style="margin-left: 10px; margin-right: 10px;"></i></button></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">4</th>
-                                        <td>Tung Nui</td>
-                                        <td>tungnui@gmail.com</td>
-                                        <td>Member</td>
-                                        <td><a href="./editUser.html" style="color:black"><i class="fas fa-edit"></i></a>
-                                            <button style=" background: none;
-                                            color: inherit;
-                                            border: none;
-                                            padding: 0;
-                                            font: inherit;
-                                            cursor: pointer;
-                                            outline: inherit;" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-trash-alt" style="margin-left: 10px; margin-right: 10px;"></i></button></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">5</th>
-                                        <td>Halo</td>
-                                        <td>aloha@gmail.com</td>
-                                        <td>Member</td>
-                                        <td><a href="./editUser.html" style="color:black"><i class="fas fa-edit"></i></a>
-                                            <button style=" background: none;
-                                            color: inherit;
-                                            border: none;
-                                            padding: 0;
-                                            font: inherit;
-                                            cursor: pointer;
-                                            outline: inherit;" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-trash-alt" style="margin-left: 10px; margin-right: 10px;"></i></button></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">6</th>
-                                        <td>ImAViewer</td>
-                                        <td>jojo@gmail.com</td>
-                                        <td>Administrator</td>
-                                        <td><a href="./editUser.html" style="color:black"><i class="fas fa-edit"></i></a>
-                                            <button style=" background: none;
-                                            color: inherit;
-                                            border: none;
-                                            padding: 0;
-                                            font: inherit;
-                                            cursor: pointer;
-                                            outline: inherit;" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-trash-alt" style="margin-left: 10px; margin-right: 10px;"></i></button></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
+        <div class="border border-dark" style="padding: 10px">
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                        <label for="roleName">Role's name</label>
+                        <input type="text" class="form-control" id="roleName" placeholder="Role's name">
+                    </div>
+                    <div class="form-group col-md-8">
+                        <label for="roleName">Role's name</label>
+                        <input type="text" class="form-control" id="roleName" placeholder="Role's name">
                     </div>
                 </div>
-                <div class="app-wrapper-footer">
-                    <div class="app-footer">
-                        <div class="app-footer__inner">
-                            <div class="app-footer-left">
-                                <ul class="nav">
-                                    <li class="nav-item">
-                                        <a href="javascript:void(0);" class="nav-link">
-                                            Footer Link 1
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="javascript:void(0);" class="nav-link">
-                                            Footer Link 2
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="app-footer-right">
-                                <ul class="nav">
-                                    <li class="nav-item">
-                                        <a href="javascript:void(0);" class="nav-link">
-                                            Footer Link 3
-                                        </a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a href="javascript:void(0);" class="nav-link">
-                                            <div class="badge badge-success mr-1 ml-0">
-                                                <small>NEW</small>
-                                            </div>
-                                            Footer Link 4
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                <h5>Input the privilege of your role:</h5>
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <thead class="thead-light">
+                            <tr>
+                                <th scope="col">Application function</th>
+                                <th scope="col">Create</th>
+                                <th scope="col">Read</th>
+                                <th scope="col">Update</th>
+                                <th scope="col">Delete</th>
+                                <th scope="col">Description</th>
+                                <th scope="col">Inherited from</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="roleManagement">
+                                        <label class="form-check-label" for="roleManagement">
+                                            Role Management
+                                        </label>
+                                        </div>
+                                </td>
+                                <td>
+                                    <div class="form-check">
+                                        <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-check">
+                                        <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-check">
+                                        <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-check">
+                                        <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="roleManagement">
+                                        <label class="form-check-label" for="roleManagement">
+                                            File
+                                        </label>
+                                        </div>
+                                </td>
+                                <td>
+                                    <div class="form-check">
+                                        <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-check">
+                                        <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-check">
+                                        <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-check">
+                                        <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="roleManagement">
+                                        <label class="form-check-label" for="roleManagement">
+                                            Category
+                                        </label>
+                                        </div>
+                                </td>
+                                <td>
+                                    <div class="form-check">
+                                        <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-check">
+                                        <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-check">
+                                        <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-check">
+                                        <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="roleManagement">
+                                        <label class="form-check-label" for="roleManagement">
+                                            Post
+                                        </label>
+                                        </div>
+                                </td>
+                                <td>
+                                    <div class="form-check">
+                                        <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-check">
+                                        <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-check">
+                                        <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-check">
+                                        <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="roleManagement">
+                                        <label class="form-check-label" for="roleManagement">
+                                            User
+                                        </label>
+                                        </div>
+                                </td>
+                                <td>
+                                    <div class="form-check">
+                                        <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-check">
+                                        <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-check">
+                                        <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-check">
+                                        <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="roleManagement">
+                                        <label class="form-check-label" for="roleManagement">
+                                            Comment
+                                        </label>
+                                        </div>
+                                </td>
+                                <td>
+                                    <div class="form-check">
+                                        <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-check">
+                                        <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-check">
+                                        <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-check">
+                                        <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="roleManagement">
+                                        <label class="form-check-label" for="roleManagement">
+                                            Platform
+                                        </label>
+                                        </div>
+                                </td>
+                                <td>
+                                    <div class="form-check">
+                                        <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-check">
+                                        <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-check">
+                                        <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="form-check">
+                                        <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-            </div>
+               <button class="btn btn-primary" type="submit"><a href="afteradd.html" style="color: #fff; text-decoration: none">Creat</button></a>
+               <button type="button"data-toggle="modal" data-target="#cancel" class="btn btn-danger">Cancel</button>
+            </form>
         </div>
-    </div>
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Delete</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              You cannot recover after deleting this user. Proceed?
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
-              <button type="button" class="btn btn-primary">Yes</button>
+    <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Detele</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  You cannot recover after deleting this categry.
+                  Process?
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Delete</button>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-    <script type="text/javascript" src="./assets/scripts/main.js"></script>
 </body>
+<script>
+    function openCity(evt, cityName) {
+        // Declare all variables
+        var i, tabcontent, tablinks;
 
+        // Get all elements with class="tabcontent" and hide them
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+
+        // Get all elements with class="tablinks" and remove the class "active"
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        // Show the current tab, and add an "active" class to the button that opened the tab
+        document.getElementById(cityName).style.display = "grid";
+        evt.currentTarget.className += " active";
+    }
+    document.getElementById("defaultOpen").click();
+</script>
+
+</body>
 </html>

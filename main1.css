@@ -79,3 +79,18 @@
     border-bottom-right-radius: 0;
     background: #4f4f4f;
 }
+label {
+    display: inline-block;
+    /* margin-bottom: .5rem; */
+    margin-top: 5px;
+    margin-left: 10px;
+}
+input[type="checkbox"] {
+    box-sizing: border-box;
+    padding: 5px;
+    width: 20px;
+    height: 20px;
+}
+h4{
+    margin-right: 30px
+}
