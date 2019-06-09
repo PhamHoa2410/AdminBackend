@@ -1,0 +1,80 @@
+.app-theme-white.fixed-header .app-header__logo {
+    background: #4f4f4f;
+}
+.app-header .app-header__content {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex: 1;
+    padding: 0 1.5rem;
+    height: 60px;
+    background-color: #4f4f4f;
+}
+.app-sidebar__heading {
+    text-transform: uppercase;
+    font-size: .8rem;
+    margin: .75rem 0;
+    font-weight: bold;
+    color: #2F8E18;
+    white-space: nowrap;
+    position: relative;
+}
+.search-wrapper .input-holder .search-icon span::before {
+    width: 4px;
+    height: 11px;
+    left: 9px;
+    top: 13px;
+    border-radius: 2px;
+    background: #fff;
+}
+.hamburger--elastic .hamburger-inner {
+    top: 1px;
+    transition-duration: 0.275s;
+    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    background: #fff;
+}
+.hamburger-inner::before {
+    top: -6px;
+    background: #fff;
+}
+.hamburger-inner::after {
+    bottom: -6px;
+    background: #fff;
+}
+.search-wrapper .input-holder .search-icon span::after {
+    width: 14px;
+    height: 14px;
+    left: 4px;
+    top: 0;
+    border-radius: 16px;
+    border: 2px solid #fff;
+}
+.search-wrapper .close::before, .search-wrapper .close::after {
+    position: absolute;
+    content: '';
+    background: #fff;
+    border-radius: 2px;
+}
+.search-wrapper.active .input-holder .search-input {
+    opacity: 1;
+    transform: translate(0, 11px);
+    color: #fff;
+}
+.app-header .app-header__content .header-menu .nav-link {
+    color: #fff;
+}
+.app-header .header-user-info>.widget-heading, .app-header .header-user-info>.widget-subheading {
+    white-space: nowrap;
+    color: #fff;
+}
+.btn {
+    position: relative;
+    transition: color 0.15s,background-color 0.15s,border-color 0.15s,box-shadow 0.15s;
+    font-size: .8rem;
+    background-color: #2F8E18;
+}
+.btn-group>.btn:not(:last-child):not(.dropdown-toggle), .btn-group>.btn-group:not(:last-child)>.btn {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    background: #4f4f4f;
+}
