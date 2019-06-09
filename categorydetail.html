@@ -1,8 +1,8 @@
-<!doctype html>
-<html lang="en">
-
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="utf-8">
+	<title></title>
+	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Language" content="en">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -25,9 +25,8 @@
      <link href="./main1.css" rel="stylesheet">
     
 </head>
-
 <body>
-    <div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
+	<div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
         <div class="app-header header-shadow">
             <div class="app-header__logo">
            <a href=""> <img src="img/logo.png" alt="logo" style="width: 60px; height: 50px; margin: 0px 0px; "> </a>               
@@ -596,78 +595,81 @@
                                 <div>Category Management
                                 </div>
                             </div>
-                            <div class="page-title-actions">
-                                <div class="d-inline-block dropdown">
-                                    <button type="button" data-toggle="dropdown" aria-haspopup="true"
-                                        aria-expanded="false" onclick="window.location.href='./addcategory.html'" class="btn-shadow btn btn-info">
-                                        Add New Category
-                                    </button>
-                                </div>
-                            </div>
+                            
                         </div>
                     </div>
-                    <div class="main-card mb-3 card">
-                        <div class="card-body">
-                            <h5 class="card-title">Categories</h5>
-                            <table class="mb-0 table">
-                                <thead>
-                                    <tr>
-                                        <th>#</th>
-                                        <th>Name</th>
-                                        <th>Created At</th>
-                                        <th>Updated At</th>
-                                        <th>Actions</th>                                      
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <th scope="row">1</th>
-                                        <td>Mark</td>
-                                        <td>Otto</td>
-                                        <td>Otto</td>
-                                        <td><a href="./categorydetail.html" style="color:black"><i class="fas fa-edit"></i></a>
-                                            <button style="	background: none;
-                                            color: inherit;
-                                            border: none;
-                                            padding: 0;
-                                            font: inherit;
-                                            cursor: pointer;
-                                            outline: inherit;" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-trash-alt" style="margin-left: 10px; margin-right: 10px;"></i></button></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">2</th>
-                                        <td>Jacob</td>
-                                        <td>Thornton</td>
-                                        <td>Otto</td>
-                                        <td><a href="./categorydetail.html" style="color:black"><i class="fas fa-edit"></i></a>
-                                            <button style="	background: none;
-                                            color: inherit;
-                                            border: none;
-                                            padding: 0;
-                                            font: inherit;
-                                            cursor: pointer;
-                                            outline: inherit;" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-trash-alt" style="margin-left: 10px; margin-right: 10px;"></i></button></td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">3</th>
-                                        <td>Larry</td>
-                                        <td>the Bird</td>
-                                        <td>Otto</td>
-                                        <td><a href="./categorydetail.html" style="color:black"><i class="fas fa-edit"></i></a>
-                                            <button style="	background: none;
-                                            color: inherit;
-                                            border: none;
-                                            padding: 0;
-                                            font: inherit;
-                                            cursor: pointer;
-                                            outline: inherit;" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-trash-alt" style="margin-left: 10px; margin-right: 10px;"></i></button></td>
-                                    </tr>
-                                </tbody>
-                            </table>
+<section class="container">
+        <div class="content">
+            <form>
+                <div class="form-row">
+                    <h4 class="col-md-6">Edit Category</h4>
+                </div>
+                <div class="border border-secondary" style="margin: 10px; padding: 10px; background: #fff;">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="categoryTags">Category tags*</label>
+                            <div>
+                                    <button class="btn btn-light">Travel</button>
+                                    <button class="btn btn-light">Travel Guide</button>
+                                    <a>2/10</a>
+                            </div>
+
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="categoryURL">Category URL</label>
+                            <input type="text" class="form-control" id="categoryURL" value="/category/travel-category" disabled>
+                        </div>
+                    </div>
+                    <h4>SEO AND SOCIAL SHARING</h4>
+                    <div class="form-row">
+                        <div class="col-md-6">
+                            <label for="categoryTitle">Category title</label>
+                            <input type="text" class="form-control" id="categoryTitle" value="Travel Category" disabled>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="categoryImage">Category Image</label>
+                            <div>
+                                <img src="#">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="categoryDescription">Category description</label>
+                            <textarea class="form-control" id="categoryDescription" rows="10" aria-valuetext="CHO EM QUA MÔN ANH ƠI" disabled></textarea>
                         </div>
                     </div>
                 </div>
-                <div class="app-wrapper-footer">
+                
+                </div>
+                 <button class="btn btn-primary" type="submit">Submit</button>
+                                <button type="button"data-toggle="modal" data-target="#cancel" class="btn btn-danger">Cancel</button>
+            </form>
+        </div>
+    </section>
+</body>
+<script>
+    function openCity(evt, cityName) {
+        // Declare all variables
+        var i, tabcontent, tablinks;
+
+        // Get all elements with class="tabcontent" and hide them
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+
+        // Get all elements with class="tablinks" and remove the class "active"
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+
+        // Show the current tab, and add an "active" class to the button that opened the tab
+        document.getElementById(cityName).style.display = "grid";
+        evt.currentTarget.className += " active";
+    }
+    document.getElementById("defaultOpen").click();
+</script>
+ <div class="app-wrapper-footer">
                     <div class="app-footer">
                         <div class="app-footer__inner">
                             <div class="app-footer-left">
@@ -707,26 +709,27 @@
             </div>
         </div>
     </div>
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="cancel" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Delete</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Cancel</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Proceed?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+                    <button type="button" class="btn btn-primary">Yes</button>
+                </div>
             </div>
-            <div class="modal-body">
-              You cannot recover after deleting this category. Proceed?
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
-              <button type="button" class="btn btn-primary">Yes</button>
-            </div>
-          </div>
         </div>
-      </div>
+    </div>
+
     <script type="text/javascript" src="./assets/scripts/main.js"></script>
 </body>
-
 </html>

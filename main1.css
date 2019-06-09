@@ -72,6 +72,7 @@
     transition: color 0.15s,background-color 0.15s,border-color 0.15s,box-shadow 0.15s;
     font-size: .8rem;
     background-color: #2F8E18;
+    color: #fff
 }
 .btn-group>.btn:not(:last-child):not(.dropdown-toggle), .btn-group>.btn-group:not(:last-child)>.btn {
     border-top-right-radius: 0;
