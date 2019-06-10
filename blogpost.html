@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title></title>
-		<meta charset="utf-8">
+	 <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Language" content="en">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -11,6 +11,20 @@
         content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
     <meta name="description" content="Tables are the backbone of almost all web applications.">
     <meta name="msapplication-tap-highlight" content="no">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--maincss-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
     <!--
     =========================================================
     * ArchitectUI HTML Theme Dashboard - v1.0.0
@@ -23,6 +37,134 @@
     -->
     <link href="./main.css" rel="stylesheet">
      <link href="./main1.css" rel="stylesheet">
+    <style type="text/css">
+        label {
+    display: inline-block;
+    /* margin-bottom: .5rem; */
+    margin-top: 5px;
+    margin-left: 10px;
+}
+input[type="checkbox"] {
+    box-sizing: border-box;
+    padding: 5px;
+    width: 20px;
+    height: 20px;
+}
+h4{
+    margin-right: 30px
+}
+h5 {
+    margin: 0;
+    font-size: 1.25rem;
+}
+.content{
+    padding: 5px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    background-color: #f1f1f1;
+    width:1044px
+}
+.aaa {
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.abc {
+    height: 46px;
+}
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    height: 54px
+}
+table, th, td {
+    border: 1px solid black;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+.nameid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 700px;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+.table1 {
+    grid-column: 1/2;
+    overflow: scroll;
+    height: 700px;
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+}
+.details {
+    grid-column: 2/4;
+}
+.tab button.active {
+    background-color:#2F8E18;
+    color: #fff;
+    font-weight: bold
+}
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    border: none
+}
+.post-right {
+    grid-column: 2;
+    width: 321px
+}
+.post-content {
+    grid-column: 1;
+    overflow: scroll;
+    height: 700px;
+    padding-left: 6px;
+    width: 360px
+}
+.category {
+    border: 1px solid #ccc;
+    margin: 5px;
+    height: 100px;
+    padding: 5px;
+}
+.publication {
+    border: 1px solid #ccc;
+    margin: 5px;
+    height: 100px;
+    padding: 5px;
+}
+.image {
+    border: 1px solid #ccc;
+    margin: 5px;
+    height: 400px;
+    padding: 5px;
+}
+.fileName {
+    grid-column: 1;
+    border: 1px solid gray;
+    text-align: center;
+    height: 400px
+}
+.revisionDetail {
+    grid-column: 2;
+    border: 1px solid gray;
+    text-align: center;
+    height: 400px
+}
+    </style>
 </head>
 <body>
 <div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
@@ -343,277 +485,151 @@
                                     <i class="fas fa-user">
                                     </i>
                                 </div>
-                                <div>Role Management
+                                <div>Blog Post Management
+                                </div>
+                            </div>
+                            <div class="page-title-actions">
+                                <div class="d-inline-block dropdown">
+                                    <button type="button" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false" onclick="window.location.href='./newpost.html'" class="btn-shadow btn btn-info">
+                                        Add New Blog Post
+                                    </button>
                                 </div>
                             </div>
                         </div>
                     </div>
-            <div>
-                <div class="left-btn">
-                    <a class="btn btn-light" href="roleManagement.html" style="background-color: #4f4f4f">Role Management</a>
-                    <a class="btn btn-primary" style="color: #fff">Role Privilige</a>
+     <section class="container" style="margin: auto;width: 90%;overflow: auto;}">
+        <div class="content">
+            <div class="aaa">
+                <div>
+                    <select style="width:70px;" name="" id="">
+                        <option value="">All</option>
+                    </select>
+                   <input class="form-check-input" type="checkbox" style="    margin-left: 10px;">
+                    <label class="form-check-label" style="    margin-left: 40px;">Recent</label>
+                </div>
+                <div class="nameid">
+                    <h5>Cisco security spotlights Microsoft Office 365 e-mail phishing increase</h5>
+                    <h5>1</h5>
                 </div>
             </div>
-            
-        </div>
-        <div class="border border-dark" style="padding: 10px">
-            <form>
-                <div class="form-group">
-                    <div class="form-row">
-                        <h4>Select row to assign privilege: </h4>
-                        <a class="btn btn-light" href="adminrole.html" style="background-color: #4f4f4f">Administrator</a>
-                        <a class="btn btn-light" href="editor.html" style="background-color: #4f4f4f">Editor</a>
-                        <a class="btn btn-light" href="member.html" style="background-color: #4f4f4f">Member</a>
-                        <a class="btn btn-primary" style="color: #fff">Viewer</a>
+            <div class="wrapper">
+                <div class="ebz">
+                    <div class="abc">
+                        <input style="float:right" class="search" type="text" placeholder="Search">
+                    </div>
+                    <div class="table1">
+                        <table id="customers">
+                            <tr>
+                                <th>Title</th>
+                                <th>ID</th>
+                            </tr>
+                            <tr>
+                                <td>Alfreds Futterkiste</td>
+                                <td>Germany</td>
+                            </tr>
+                            <tr>
+                                <td>Berglunds snabbköp</td>
+                                <td>Sweden</td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
-                <div class="table-responsive">
-                    <table class="table table-bordered">
-                        <thead class="thead-light">
-                            <tr>
-                                <th scope="col">Application function</th>
-                                <th scope="col">Create</th>
-                                <th scope="col">Read</th>
-                                <th scope="col">Update</th>
-                                <th scope="col">Delete</th>
-                                <th scope="col">Description</th>
-                                <th scope="col">Inherited from</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" id="roleManagement">
-                                        <label class="form-check-label" for="roleManagement">
-                                            Role Management
+                <div class="details">
+                    <div class="tab">
+                        <button class="tablinks" id="defaultOpen" onclick="openCity(event, 'Details')">Details</button>
+                        <button class="tablinks" onclick="openCity(event, 'Files')">Files</button>
+                    </div>
+                    <!-- Tab content -->
+                    <div id="Details" class="tabcontent tabcontent-details">
+                        <div class="post-content">
+                            <p>The leading e-mail service – in Microsoft’s Office 365 package – seems to be getting the most attention from those attackers hellbent on stealing enterprise data or your private information via phishing attacks. Amazon and Google see their share of phishing attempts in their cloud-based services as well.</p>
+
+<p>But attackers are crafting and launching phishing campaigns targeting Office 365 users, wrote Ben Nahorney, a Threat Intelligence Analyst focused on covering the threat landscape for Cisco Security in a blog focusing on the Office 365 phishing issue.</p>
+
+<p>Nahorney wrote of research from security vendor Agari Data, that found over the last few quarters, there has been a steady increase in the number of phishing emails impersonating Microsoft. While Microsoft has long been the most commonly impersonated brand, it now accounts for more than half of all brand impersonations seen in the last quarter.</p>
+
+<p>Recently cloud security firm Avanan wrote in its annual phishing report, one in every 99 emails is a phishing attack, using malicious links and attachments as the main vector.  “Of the phishing attacks we analyzed, 25 percent bypassed Office 365 security, a number that is likely to increase as attackers design new obfuscation methods that take advantage of zero-day vulnerabilities on the platform,” Avanan wrote.</p>
+
+<p>The attackers attempt to steal a user’s login credentials with the goal of taking over accounts. If successful, attackers can often log into the compromised accounts, and perform a wide variety of malicious activity: Spread malware, spam and phishing emails from within the internal network;  carry out tailored attacks such as spear phishing and business email compromise [a long-standing business scam that uses spear-phishing, social engineering, identity theft, e-mail spoofing], and target partners and customers, Nahorney wrote.</p>
+
+<p>Nahorney wrote that at first glance, this may not seem very different than external email-based attacks. However, there is one critical distinction: The malicious emails sent are now coming from legitimate accounts.</p>
+
+<p>“For the recipient, it’s often even someone that they know, eliciting trust in a way that would not necessarily be afforded to an unknown source. To make things more complicated, attackers often leverage ‘conversation hijacking,’ where they deliver their payload by replying to an email that’s already located in the compromised inbox,” Nahorney stated.</p>
+
+<p>The methods used by attackers to gain access to an Office 365 account are fairly straightforward, Nahorney wrote.</p>   
+
+<p>“The phishing campaigns usually take the form of an email from Microsoft. The email contains a request to log in, claiming the user needs to reset their password, hasn’t logged in recently or that there’s a problem with the account that needs their attention. A URL is included, enticing the reader to click to remedy the issue,” Nahorney wrote.</p>
+
+<p>Once logged in, nefarious activities can go on unnoticed as the attacker has what look like authorized credentials.</p> 
+
+<p>“This gives the attacker time for reconnaissance: a chance to observe and plan additional attacks. Nor will this type of attack set off a security alert in the same way something like a brute-force attack against a webmail client will, where the attacker guesses password after password until they get in or are detected,” Nahorney  stated.</p>
+
+<p>Nahorney suggested the following steps customers can take to protect email:
+<ul>
+   <li> - Use multi-factor authentication. If a login attempt requires a secondary authorization before someone is allowed access to an inbox, this will stop many attackers, even with phished credentials.</li>
+   <li> - Deploy advanced anti-phishing technologies. Some machine-learning technologies can use local identity and relationship modeling alongside behavioral analytics to spot deception-based threats.</li>
+   <li> - Run regular phishing exercises. Regular, mandated phishing exercises across the entire organization will help to train employees to recognize phishing emails, so that they don’t click on malicious URLs, or enter their credentials into malicious website.</li>
+</ul>
+</p>
+<h4>Homeland Security flags Office 365, other cloud email services</h4>
+<p>The U.S. government, too, has been warning customers of Office 365 and other cloud-based email services that they should be on alert for security risks. The US Department of Homeland Security's Cybersecurity and Infrastructure Security Agency (CISA) this month <a href="https://www.us-cert.gov/ncas/analysis-reports/AR19-133A" style="color: #2F8E18">issued a report targeting</a> Office 365 and other cloud services saying:</p>
+
+<p>“Organizations that used a third party have had a mix of configurations that lowered their overall security posture (e.g., mailbox auditing disabled, unified audit log disabled, multi-factor authentication disabled on admin accounts). In addition, the majority of these organizations did not have a dedicated IT security team to focus on their security in the cloud. These security oversights have led to user and mailbox compromises and vulnerabilities.”</p>
+
+<p>
+   The agency also posted remediation suggestions including:
+   <ul>
+      <li>Enable unified audit logging in the Security and Compliance Center.</li>
+      <li>Enable mailbox auditing for each user.</li>
+      <li>Ensure Azure AD password sync is planned for and configured correctly, prior to migrating users.</li>
+      <li>Disable legacy email protocols, if not required, or limit their use to specific users.</li>
+   </ul>
+</p>
+<p>This story, "Cisco security spotlights Microsoft Office 365 e-mail phishing increase" was originally published by <a href="https://www.networkworld.com/" style="color: #2F8E18">Network World</a>.</p>
+                        </div>
+                        <div class="post-right">
+                            <div class="category">
+                                <h5 style="margin-bottom: 10px;">Category</h5>
+                                <div>
+                                    <button class="btn tags">Travel</button>
+                                    <button class="btn tags">ABC</button>
+                                </div>
+                            </div>
+                            <div class="publication">
+                                <h5 style="margin-bottom: 10px; ">Publication Mode</h5>
+                                        <input class="form-check-input" type="checkbox" style="    margin-left: 10px;">
+                                        <label class="form-check-label" style="    margin-left: 40px;">
+                                            Published
                                         </label>
-                                        </div>
-                                </td>
-                                <td>
-                                    <div class="form-check">
-                                        <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="checked" aria-label="...">
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="form-check">
-                                        <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="form-check">
-                                        <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="form-check">
-                                        <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
-                                    </div>
-                                </td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" id="roleManagement">
-                                        <label class="form-check-label" for="roleManagement">
-                                            File
+                                        <input class="form-check-input" type="checkbox"style="    margin-left: 10px;">
+                                        <label class="form-check-label"style=" margin-left: 40px;">
+                                            Save as draf
                                         </label>
-                                        </div>
-                                </td>
-                                <td>
-                                    <div class="form-check">
-                                        <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="form-check">
-                                        <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="form-check">
-                                        <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="form-check">
-                                        <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
-                                    </div>
-                                </td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" id="roleManagement">
-                                        <label class="form-check-label" for="roleManagement">
-                                            Category
-                                        </label>
-                                        </div>
-                                </td>
-                                <td>
-                                    <div class="form-check">
-                                        <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="form-check">
-                                        <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="form-check">
-                                        <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="form-check">
-                                        <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
-                                    </div>
-                                </td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" id="roleManagement" checked>
-                                        <label class="form-check-label" for="roleManagement">
-                                            Post
-                                        </label>
-                                        </div>
-                                </td>
-                                <td>
-                                    <div class="form-check">
-                                        <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="form-check">
-                                        <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="..." checked>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="form-check">
-                                        <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="form-check">
-                                        <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
-                                    </div>
-                                </td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" id="roleManagement">
-                                        <label class="form-check-label" for="roleManagement">
-                                            User
-                                        </label>
-                                        </div>
-                                </td>
-                                <td>
-                                    <div class="form-check">
-                                        <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="form-check">
-                                        <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="form-check">
-                                        <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="form-check">
-                                        <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
-                                    </div>
-                                </td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" id="roleManagement" checked>
-                                        <label class="form-check-label" for="roleManagement">
-                                            Comment
-                                        </label>
-                                        </div>
-                                </td>
-                                <td>
-                                    <div class="form-check">
-                                        <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="..." checked>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="form-check">
-                                        <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="..." checked>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="form-check">
-                                        <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="..." checked>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="form-check">
-                                        <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="..." checked>
-                                    </div>
-                                </td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" id="roleManagement">
-                                        <label class="form-check-label" for="roleManagement">
-                                            Platform
-                                        </label>
-                                        </div>
-                                </td>
-                                <td>
-                                    <div class="form-check">
-                                        <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="form-check">
-                                        <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="form-check">
-                                        <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="form-check">
-                                        <input class="form-check-input position-static" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
-                                    </div>
-                                </td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                 </div>
-                <div class="form-row" style="display: flex; justify-content: flex-end;">
-                    <a class="btn btn-primary" style="color: #fff">Save</a>
+
+                              
+                            </div>
+                            <div class="image">
+                                <h5 style="margin-bottom: 10px;">Featured Image</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="Files" class="tabcontent tabcontent-details">
+                        <div class="fileName">
+                            <h4>File Name</h4>
+                        </div>
+                        <div class="revisionDetail">
+                            <h4>
+                                Revision Details
+                            </h4>
+                        </div>
+                    </div>
                 </div>
-            </form>
+            </div>
         </div>
-               <div class="app-wrapper-footer">
+    </section>
+       <div class="app-wrapper-footer">
                     <div class="app-footer">
                         <div class="app-footer__inner">
                             <div class="app-footer-left">
@@ -653,7 +669,28 @@
             </div>
         </div>
     </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Delete</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              You cannot recover after deleting this category. Proceed?
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+              <button type="button" class="btn btn-primary">Yes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <script type="text/javascript" src="./assets/scripts/main.js"></script>
 </body>
+
 <script>
     function openCity(evt, cityName) {
         // Declare all variables
@@ -676,7 +713,9 @@
         evt.currentTarget.className += " active";
     }
     document.getElementById("defaultOpen").click();
-</script>
 
-</body>
+    $('#myModal').on('shown.bs.modal', function () {
+        $('#myInput').trigger('focus')
+    })
+</script>                   
 </html>
